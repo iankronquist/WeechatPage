@@ -7,7 +7,7 @@ import shlex
 from twisted.internet import utils
 from twisted.python import log
 
-from page import config
+from weechatpage import config
 
 
 def _check(prog):

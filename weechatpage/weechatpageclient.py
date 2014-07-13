@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import sys
 from datetime import datetime, timedelta
 
@@ -6,10 +8,10 @@ from twisted.internet.protocol import Protocol, ReconnectingClientFactory
 from twisted.protocols.policies import TimeoutMixin
 from twisted.python import log
 
-from page import config
-from page.notify import notify
-from page.parser import parse_message, bytes_to_int
-from page.utils import clean_formatting
+from weechatpage import config
+from weechatpage.notify import notify
+from weechatpage.parser import parse_message, bytes_to_int
+from weechatpage.utils import clean_formatting
 
 
 class RelayProtocol(Protocol, TimeoutMixin):
