@@ -2,7 +2,6 @@
 README.md
 requirements.txt
 setup.py
-bin/weechatpageclient.py
 weechatpage/__init__.py
 weechatpage/notify.py
 weechatpage/parser.py
