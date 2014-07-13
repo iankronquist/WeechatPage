@@ -6,7 +6,11 @@ setup(
     author='Ian Kronquist',
     author_email='iankronquist@gmail.com',
     packages=['weechatpage', 'weechatpage.test'],
-    scripts=['bin/stowe-towels.py','bin/wash-towels.py'],
+    entry_points = {
+    'console_scripts': [
+        'weechatclient = weechatpage.weechatpageclient:main',
+    ],
+    },
     url='http://pypi.python.org/pypi/WeechatPage/',
     license='LICENSE.txt',
     description='Report WeeChat statuses as desktop notifications',
